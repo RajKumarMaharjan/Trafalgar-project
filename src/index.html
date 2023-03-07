@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>YIPL-frontend-challenge</title>
+</head>
+<body>
+  <header>
+    <!--Navbar-->
+    <nav class="container bg-white border-gray-200 px-2 w-full font-Mulish sm:px-10 py-12 rounded dark:bg-gray-900 md:px-20 xl:ml-16">
+      <div class="flex flex-wrap items-center justify-between mx-auto">
+          <!--logo-->
+          <a href="index.html" class="flex items-center xl:ml-10">
+              <img src="./images/logo.jpg" class="h-6 mr-3 sm:h-9 md:h-6 lg:h-9 xl:h-10" alt="Tarfalgar Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 font-semibold  md:flex-row md:space-x-4 md:mt-0 md:text-base md:font-semibold md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 lg:text-base lg:space-x-8 lg:mt-1 lg:mr-8">
+              <li>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-black md:font-bold md:hover:text-blue-700 md:p-0 dark:text-white" aria-current="page">
+                    Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    Find a doctor
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    Apps
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                    About us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+    <!---header banner--->
+    <div class="container flex sm:px-10 ">
+        <div class="sm:hidden md:block md:mt-10 xl:-mt-3 xl:-ml-10">
+            <img src="./images/element-3.png" alt="dot-element" class="md:w-32 md:-ml-10 md:-mt-16 lg:-mt-16 lg:-ml-10 xl:ml-0 xl:mt-2">
+        </div>
+        <!--header text-->
+        <div class="text-left sm:p-2 sm:-mt-8 md:w-7/12 md:p-4 md:mt-0 xl:ml-28 xl:mt-12">
+            <h1 class="font-semibold sm:text-xl sm:mt-16 md:text-2xl xl:font-bold xl:text-5xl xl:w-full xl:leading-tight ">
+                Virtual healthcare for you
+            </h1>
+            <p class="text-gray-500 sm:text-sm sm:py-3 xl:text-lg xl:w-11/12 xl:font-light">
+                Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+            </p>
+             <!--header-button-->
+        <button class="bg-blue-500 rounded-3xl hover:bg-black text-white sm:px-3 sm:py-2 sm:text-xs sm:ml-8 sm:mt-3 md:mt-10 md:text-sm md:px-4 md:py-2 xl:px-7 xl:py-3 xl:text-base xl:ml-0 xl:mt-8">
+            Consult today
+        </button>
+        </div>
+        <div class="sm:mr-5 sm:mt-5 md:p-2 ">
+            <img src="./images/trafalgar-header illustration 1.jpg" alt="trafalgar-header" class="w-full xl:mr-24">
+        </div>
+    </div>
+</header>
+<!--header end-->
+<!---Our Services--->
+<section id="our-service" class="sm:mt-16 relative ">
+  <h2 class="text-center font-bold sm:text-lg md:text-2xl xl:text-4xl xl:font-extrabold">
+      Our services
+  </h2>
+    <hr class="border border-black  ml-auto mr-auto mt-4 sm:w-10 md:w-14 xl:mt-8 xl:mb-3 ">
+    <p class="text-gray-500 text-xs text-center py-4 md:text-sm sm:mx-16 md:mx-32 lg:text-sm xl:text-lg xl:font-light">
+      We provide to you the best choices for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health
+    </p>
+    <img src="./images/balloon-left.jpg" alt="services-img" class="brightness-100 w-8/12 md:w-7/12 lg:w-6/12 lg:mt-8 xl:w-2/4 xl:mt-5">
+    <!---Services section--->
+    <section class="overflow-hidden absolute sm:top-36 md:mx-16 md:top-52 xl:top-52 lg:top-36">
+      <div class="container mx-auto px-5 py-2 md:ml-10 lg:px-32 lg:pt-12 xl:px-10 xl:ml-16">
+        <div class="-m-1 flex flex-wrap md:-m-2">
+           <!--Search doctor service-->
+          <div class="flex sm:ml-8 md:ml-0 md:w-1/3 flex-wrap gap-10">
+            <div class="sm:w-44 md:w-10/12 md:h-80 p-1 md:p-2 shadow-lg  rounded-2xl bg-white">
+              <img src="./images/search doctor.jpg" alt="search doctor" class=" p-7">
+                        <h2 class="sm:text-lg sm:font-bold sm:ml-3 sm:-mt-2 md:text-xl md:font-bold md:mb-4 md:ml-5 lg:text-xl lg:py-2 lg:font-bold lg:ml-5 xl:text-2xl xl:py-2 xl:font-extrabold " >
+                            Search doctor
+                        </h2>
+                        <p class="text-gray-500 sm:text-sm sm:px-3 sm:pb-2 md:text-sm md:ml-5 md:w-40 lg:text-sm xl:text-base xl:ml-2 xl:w-72 xl:font-light">
+                            Choose your doctor from thousands of specialist, general, and trusted hospitals
+                        </p>
+            </div>
+          </div>
+          <!--Online pharmacy service-->
+          <div class="flex md:w-1/3 flex-wrap xl:-ml-8">
+            <div class="sm:w-44 sm:ml-8 md:ml-0 md:w-10/12 md:h-80  shadow-lg  rounded-2xl bg-white">
+              <img src="./images/Online-pharmacy.jpg" alt="Online pharmacy" class=" p-7">
+              <h2 class="sm:text-lg sm:font-bold sm:ml-3 md:text-xl md:font-bold md:mb-4 md:ml-5  md:mt-2 lg:text-xl lg:py-2 lg:font-bold lg:ml-5 lg:mt-3.5 xl:py-2 xl:text-2xl xl:font-bold" >
+                  Online pharmacy
+              </h2>
+              <p class="text-gray-500 sm:text-sm sm:px-3 md:text-sm md:ml-5 md:w-40 lg:text-sm xl:text-base xl:ml-2 xl:w-72 xl:font-light">
+                  Buy  your medicines with our mobile application with a simple delivery system
+              </p>
+          </div>
+           
+          </div>
+          <!--Consultation service-->
+          <div class="flex md:w-1/3 md:ml-0 flex-wrap xl:-ml-8">
+            <div class="sm:w-44 sm:mt-10 sm:ml-8 md:ml-0 md:mt-0 md:w-10/12 md:h-80 shadow-lg  rounded-2xl bg-white ">
+              <img src="./images/Consultation.jpg" alt="Consultation" class=" p-7">
+              <h2 class="sm:text-lg sm:font-bold sm:ml-3 md:text-xl md:font-bold md:mb-4 md:ml-5 lg:text-xl lg:py-2 lg:font-bold lg:ml-5 xl:py-2 xl:text-2xl xl:font-bold" >
+                  Consultation
+              </h2>
+              <p class="sm:text-sm sm:px-3 sm:pb-3 md:text-sm md:ml-5 md:w-40 text-gray-500 lg:text-sm xl:ml-2 xl:w-72 xl:text-base xl:font-light">
+                  Free consultation with our trusted doctors and get the best recommendation
+              </p>
+          </div>
+          </div>
+          <!--Details info service-->
+          <div class="flex md:w-1/3 md:mt-10 flex-wrap">
+            <div class="sm:w-44 sm:mt-10 sm:ml-8 md:ml-0 md:mt-0 md:w-10/12 md:h-80 shadow-lg  rounded-2xl bg-white">
+              <img src="./images/Details Info.jpg" alt="Details" class=" p-7">
+              <h2 class="sm:text-lg sm:font-bold sm:ml-3 sm-mt-8 md:text-xl md:font-bold md:mb-4 md:ml-5 lg:text-xl lg:py-2 lg:font-bold lg:ml-5 xl:py-2 xl:ml-5 xl:text-2xl xl:font-bold" >
+                  Details info
+              </h2>
+              <p class="sm:text-sm sm:px-3 md:text-sm md:ml-5 md:w-40 text-gray-500 lg:text-sm xl:ml-2 xl:w-72 xl:text-base xl:font-light">
+                  Free consultation with our trusted doctors and get the best recommendation
+              </p>
+          </div>
+          </div>
+          <!--Emergency care service-->
+          <div class="flex md:w-1/3 sm:w-44 sm:mt-10 sm:ml-8  md:ml-0 md:mt-10 flex-wrap xl:-ml-8 ">
+            <div class="sm:w-44 sm:shadow-xl md:w-10/12 md:h-80  md:shadow-lg  rounded-2xl bg-white">
+              <img src="./images/Emergency care.jpg" alt="Emergency" class=" p-7">
+              <h2 class="sm:text-lg sm:font-bold sm:ml-3 sm-mt-8 md:text-xl md:font-bold md:mb-4 md:ml-5 md:mt-7 lg:text-xl lg:py-2 lg:font-bold lg:ml-5 lg:mt-5 xl:py-2 xl:ml-5 xl:mt-5 xl:text-2xl xl:font-bold" >
+                  Emergency care
+              </h2>
+              <p class="sm:text-sm sm:px-3 sm:pb-3 md:text-sm md:ml-5 md:w-40 text-gray-500 lg:text-sm xl:ml-2 xl:w-72 xl:text-base xl:font-light">
+                  You can get 24/7 urgent care for yourself or your children and your lovely family
+              </p>
+          </div>
+          </div>
+            <!--Tracking service-->
+          <div class="flex md:w-1/3 flex-wrap md:mt-10 mb-2 xl:-ml-8">
+            <div class="sm:w-44 sm:mt-10 sm:ml-8 md:ml-0 md:mt-0 md:w-10/12 md:h-80 shadow-lg rounded-2xl bg-white">
+              <img src="./images/Tracking.jpg" alt="Tracking" class="p-7 sm:pb-8">
+              <h2 class="sm:text-lg sm:font-bold sm:ml-3 sm:-mt-6 md:text-xl md:font-bold md:mb-4 md:ml-5 lg:text-xl lg:py-2 lg:font-bold lg:ml-5 xl:py-2 xl:ml-5 xl:text-2xl xl:font-bold" >
+                  Tracking
+              </h2>
+              <p class="sm:text-sm sm:px-3 sm:pb-4  md:text-sm md:ml-5 md:w-40 text-gray-500 lg:text-sm xl:ml-2 xl:w-72 xl:text-base xl:font-light">
+                  Track and save your medical history and health data 
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+</section>
+<!---Our Services end--->
+  <!---Healthcare --->
+  <section class="container sm:relative sm:px-10 sm:top-96 md:mt-32" >
+    <div class="md:grid md:grid-cols-2">
+        <img src="./images/Leading healthcare.jpg" alt="leading-healthcare" class="sm:w-6/12 sm:mx-32 sm:mt-64 md:mx-0 md:ml-5 md:mt-0 xl:w-full xl:p-10">
+        <div class="healthcare-text xl:ml-0 xl:mt-24">
+            <h1 class="font-bold sm:text-center sm:mt-8 md:text-start md:ml-14 md:text-2xl md:pr-5 lg:w-80 xl:text-4xl xl:font-bold xl:w-96">
+                Leading healthcare providers
+            </h1>
+            <hr class="w-10 border-t-2 mt-6 border-black sm:mx-auto sm:w-10 md:w-14 md:ml-14 ">
+            <p class="text-gray-500 pt-8 text-sm font-light sm:mx-24 sm:text-center md:text-start md:mx-14 lg:w-80 xl:text-lg xl:w-96">
+                Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride 
+                in the solutions we deliver
+            </p>
+            <button class="border-2 border-sky-400 rounded-full text-sky-500 px-8 py-2 hover:bg-blue-700 hover:text-white sm:ml-32 sm:mt-10 md:ml-14 xl:w-52 xl:h-16 xl:text-lg xl:font-bold">
+                Learn more
+            </button>
+        </div>
+    </div>
+    <img src="./images/element-3.png" alt="right-element" class="float-right opacity-30 mt-5 -mr-16 sm:w-16 md:w-24 xl:w-32">
+    <!---mobile apps--->
+    <div class="md:grid grid-cols-2 mt-32 md:mx-4 lg:mx-24 xl:mt-64">
+        <div class="healthcare-text lg:w-96">
+            <h1 class="font-bold sm:text-center sm:mt-8 md:text-start md:ml-14 md:text-2xl md:w-44 xl:text-4xl xl:w-72 xl:leading-snug">
+                Download our mobile apps
+            </h1>
+            <hr class="w-16 border-t-2 border-black mt-6 sm:mx-auto sm:w-10 sm:mb-6 md:w-10 md:mb-6 md:ml-14 lg:mb-6 xl:w-16">
+            <p class="text-gray-500 text-sm sm:mx-24 sm:text-center md:text-start md:w-60 md:ml-14 xl:pt-6 xl:text-lg xl:w-96">
+                Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedious form, long calls, or administrative hassle) and securely
+            </p>
+            <button class="border-2 border-sky-500 rounded-full text-sky-500 px-8 py-2 hover:bg-blue-700 hover:text-white sm:ml-32 sm:mt-10 md:ml-14 xl:px-10 xl:py-3 xl:text-lg md:font-bold">
+                Download <span class="px-2 text-lg xl:ml-2 "><i class="fa fa-long-arrow-down" aria-hidden="true"></i></span>
+            </button>
+        </div>
+        <img src="./images/mobile app.jpg" alt="app" class="sm:mt-24 sm:w-8/12 sm:mx-auto md:w-full md:mt-16 lg:w-full lg:-ml-6 xl:w-full">
+        </div>
+</section>
+ <!---mobile apps end--->
+
+<!--Our customer Saying-->
+<div
+  id="carouselExampleCaptions"
+  class="relative mx-auto sm:mt-96 xl:mt-96 xl:ml-16"
+  data-te-carousel-init
+  data-te-carousel-slide>
+  <div
+    class="absolute right-0 bottom-0 left-0 z-[2] mx-[15%] -mb-14 flex list-none justify-center p-0"
+    data-te-carousel-indicators>
+    <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="0"
+      data-te-carousel-active
+      class="mx-[3px] box-content h-[0px]  flex-initial cursor-pointer border-0  border-solid border-transparent rounded-full bg-blue-500 bg-clip-padding p-2 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+      <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="0"
+      data-te-carousel-active
+      class="mx-[3px] box-content h-[0px]  flex-initial cursor-pointer border-0  border-solid border-transparent rounded-full bg-blue-500 bg-clip-padding p-2 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+      <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="0"
+      data-te-carousel-active
+      class="mx-[3px] box-content h-[0px]  flex-initial cursor-pointer border-0  border-solid border-transparent rounded-full bg-blue-500 bg-clip-padding p-2 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+      <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="0"
+      data-te-carousel-active
+      class="mx-[3px] box-content h-[0px]  flex-initial cursor-pointer border-0  border-solid border-transparent rounded-full bg-blue-500 bg-clip-padding p-2 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-current="true"
+      aria-label="Slide 1"></button>
+  </div>
+  <div
+    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <div
+      class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-active
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <div class="box bg-blue-400 rounded-3xl sm:w-72 sm:h-96 sm:mx-auto sm:mt-24 md:w-10/12 md:h-60 md:mx-20 lg:h-72 lg:p-10 xl:w-6/7 xl:h-96">
+        <h2 class="text-white text-center sm:font-semibold sm:py-5 md:text-xl md:font-semibold lg:text-3xl xl:text-4xl">
+            What our customer are saying
+        </h2>
+        <hr class="w-10 border-t-2 border-wite text-white sm:mx-auto md:mx-auto xl:w-14">
+        <div id="customer" class="md:grid md:grid-cols-3">
+            <img src="./images/Profile-pic.jpg" alt="profile img" class="border-4 border-white rounded-full sm:mt-10 sm:mx-auto sm:w-4/12 md:w-5/12">
+            <div class="customer-name sm:text-center sm:mt-4 sm:mx-20  md:text-start md:-ml-12 md:mt-16 lg:-ml-16 lg:mt-20 xl:mt-24 xl:-ml-20">
+                <h4 class="text-white font-semibold text-sm lg:text-xl xl:text-2xl xl:font-bold">
+                    Edward Newgate
+                </h4>
+                <p class="text-gray-100 text-sm xl:text-lg">
+                    Founder Circle
+                </p>
+            </div>
+            <div id="customer-massage">
+                <p class="text-gray-100 text-sm sm:mt-4 sm:mx-4 md:-ml-24 md:mt-10 md:pr-10 lg:pr-16 xl:pr-8 xl:-ml-32 xl:mt-16 xl:text-xl">
+                    “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                </p>
+            </div> 
+        </div>
+        <!--dot element img-->
+    <img src="./images/Group element -1.png" alt="dot-element" class="w-12 sm:-ml-10 sm:-mt-44 md:-mt-28 lg:-ml-20 xl:w-20 xl:-mt-16 xl:-ml-24">
+    <img src="./images/Group element -1.png" alt="dot-element" class="w-12 float-right brightness-200 sm:ml-60 sm:-mt-64 md:-mt-40 lg:-mt-52 lg:-mr-10 xl:-mt-96 xl:w-24 xl:pr-3 ">
+    </div>
+    </div>
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <div class="box bg-blue-400 rounded-3xl sm:w-72 sm:h-96 sm:mx-auto sm:mt-24 md:w-10/12 md:h-60 md:mx-20 lg:h-72 lg:p-10 xl:w-6/7 xl:h-96">
+        <h2 class="text-white text-center sm:font-semibold sm:py-5 md:text-xl md:font-semibold lg:text-3xl xl:text-4xl">
+            What our customer are saying
+        </h2>
+        <hr class="w-10 border-t-2 border-wite text-white sm:mx-auto md:mx-auto xl:w-14">
+        <div id="customer" class="md:grid md:grid-cols-3">
+            <img src="./images/Profile-pic.jpg" alt="profile img" class="border-4 border-white rounded-full sm:mt-10 sm:mx-auto sm:w-4/12 md:w-5/12">
+            <div class="customer-name sm:text-center sm:mt-4 sm:mx-20  md:text-start md:-ml-12 md:mt-16 lg:-ml-16 lg:mt-20 xl:mt-24 xl:-ml-20">
+                <h4 class="text-white font-semibold text-sm lg:text-xl xl:text-2xl xl:font-bold">
+                    Edward Newgate
+                </h4>
+                <p class="text-gray-100 text-sm xl:text-lg">
+                    Founder Circle
+                </p>
+            </div>
+            <div id="customer-massage">
+                <p class="text-gray-100 text-sm sm:mt-4 sm:mx-4 md:-ml-24 md:mt-10 md:pr-10 lg:pr-16 xl:pr-8 xl:-ml-32 xl:mt-16 xl:text-xl">
+                    “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                </p>
+            </div> 
+        </div>
+        <!--dot element img-->
+    <img src="./images/Group element -1.png" alt="dot-element" class="w-12 sm:-ml-10 sm:-mt-44 md:-mt-28 lg:-ml-20 xl:w-20 xl:-mt-16 xl:-ml-24">
+    <img src="./images/Group element -1.png" alt="dot-element" class="w-12 float-right brightness-200 sm:ml-60 sm:-mt-64 md:-mt-40 lg:-mt-52 lg:-mr-10 xl:-mt-96 xl:w-24 xl:pr-3 ">
+    </div>
+    </div>
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <div class="box bg-blue-400 rounded-3xl sm:w-72 sm:h-96 sm:mx-auto sm:mt-24 md:w-10/12 md:h-60 md:mx-20 lg:h-72 lg:p-10 xl:w-6/7 xl:h-96">
+        <h2 class="text-white text-center sm:font-semibold sm:py-5 md:text-xl md:font-semibold lg:text-3xl xl:text-4xl">
+            What our customer are saying
+        </h2>
+        <hr class="w-10 border-t-2 border-wite text-white sm:mx-auto md:mx-auto xl:w-14">
+        <div id="customer" class="md:grid md:grid-cols-3">
+            <img src="./images/Profile-pic.jpg" alt="profile img" class="border-4 border-white rounded-full sm:mt-10 sm:mx-auto sm:w-4/12 md:w-5/12">
+            <div class="customer-name sm:text-center sm:mt-4 sm:mx-20  md:text-start md:-ml-12 md:mt-16 lg:-ml-16 lg:mt-20 xl:mt-24 xl:-ml-20">
+                <h4 class="text-white font-semibold text-sm lg:text-xl xl:text-2xl xl:font-bold">
+                    Edward Newgate
+                </h4>
+                <p class="text-gray-100 text-sm xl:text-lg">
+                    Founder Circle
+                </p>
+            </div>
+            <div id="customer-massage">
+                <p class="text-gray-100 text-sm sm:mt-4 sm:mx-4 md:-ml-24 md:mt-10 md:pr-10 lg:pr-16 xl:pr-8 xl:-ml-32 xl:mt-16 xl:text-xl">
+                    “Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”
+                </p>
+            </div> 
+        </div>
+        <!--dot element img-->
+    <img src="./images/Group element -1.png" alt="dot-element" class="w-12 sm:-ml-10 sm:-mt-44 md:-mt-28 lg:-ml-20 xl:w-20 xl:-mt-16 xl:-ml-24">
+    <img src="./images/Group element -1.png" alt="dot-element" class="w-12 float-right brightness-200 sm:ml-60 sm:-mt-64 md:-mt-40 lg:-mt-52 lg:-mr-10 xl:-mt-96 xl:w-24 xl:pr-3 ">
+    </div>
+    </div>
+  </div>
+  <button
+    class="absolute  -bottom-16 sm:left-10 md:left-52 lg:left-80 xl:left-96 z-[1] flex w-[15%] items-center justify-center border-0  bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+      </svg>
+    </span>
+    <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+      Previous
+      </span
+    >
+  </button>
+  <button
+    class="absolute  -bottom-16 sm:right-10 md:right-52 lg:right-80 xl:right-96 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+      Next
+      </span
+    >
+  </button>
+</div>
+<!--Our customer end-->
+<!---latest article--->
+<section id="latest article" class="relative sm:mt-44 sm:bottom-0">
+  <h1 class="font-bold text-center py-5 md:text-2xl xl:text-4xl xl:font-bold">
+      Check out our latest article
+  </h1>
+  <hr class="w-10 border-t-2 border-black mx-auto pb-5 xl:w-14 xl:mt-4 ">
+  <div id="article-bg-img" class="flex justify-between sm:mt-10">
+      <img src="./images/dot-element-2.png" alt="dot-element" class="w-20 h-20 xl:w-32 xl:h-32 xl:ml-24">
+      <img src="./images/balloon-right.jpg" alt="blue balloon" class="sm:w-2/5 md:w-5/12 xl:w-4/12">
+  </div>
+ 
+  <!--article cards-->
+  <div id="article-cards" class="container md:absolute sm:-mt-60 md:-mt-80 md:flex md:gap-2 md:px-8 md:ml-4 lg:flex lg:gap-4 lg:justify-center lg:top-96 lg:pt-8 xl:top-0 xl:mt-32 xl:ml-10 xl:gap-8">   
+      <!--Disease detection-->
+      <div class="box-1 w-60 border rounded-3xl shadow-sm sm:mx-auto md:w-72 md:mt-0 lg:w-72 lg:mt-20 lg:mr-0 xl:w-80 xl:mx-0">
+          <img src="./images/Disease.jpg" alt="Disease" class="rounded-t-3xl md:w-full">
+         <div id="text" class="bg-white p-4 xl:w-72 mx-auto">
+          <h2 class="font-bold py-3 md:text-xl md:font-bold">
+              Disease detection, check up in the laboratory
+          </h2>
+          <p class="text-sm text-gray-500 pb-5 xl:text-base">
+              In this case, the role of the health laboratory is very important to do a disease detection...
+          </p>
+          <a href="#" class="text-sky-500 py-5 text-xs xl:text-base xl:font-semibold">
+              Read more  <i class="fa fa-long-arrow-right p-2" aria-hidden="true"></i>
+          </a>
+         </div>
+      </div>
+      <div class="box-2 w-60 border rounded-3xl shadow-sm sm:mt-10 sm:mx-auto md:w-72 md:mt-0 lg:w-72 lg:mt-20 lg:mx-0 xl:w-80 xl:mx-0">
+          <img src="./images/Herbal.jpg" alt="Herbal" class="rounded-t-3xl md:w-full">
+         <div id="text" class="bg-white p-4">
+          <h2 class="font-bold py-3 xl:text-xl xl:font-bold">
+              Herbal medicines that are safe for consumption
+          </h2>
+          <p class="text-sm text-gray-500 pb-5 xl:text-base">
+              Herbal medicine is very widely used at this time because of its very good for your health...
+          </p>
+          <a href="#" class="text-sky-500 py-5 text-xs  xl:text-base xl:font-semibold">
+              Read more  <i class="fa fa-long-arrow-right p-2" aria-hidden="true"></i>
+          </a>
+         </div>
+      </div>
+      <div class="box-3 w-60 border rounded-3xl shadow-sm sm:mt-10 sm:mx-auto md:w-72 md:mt-0 lg:w-72 lg:mt-20 lg:ml-0 xl:w-80 xl:mx-0">
+          <img src="./images/facial.jpg" alt="facial" class="rounded-t-3xl md:w-full">
+         <div id="text" class="bg-white p-4">
+          <h2 class="font-bold py-3 xl:text-xl xl:font-bold">
+              Natural care for healthy facial skin
+          </h2>
+          <p class="text-sm text-gray-500 pb-5 xl:text-base">
+              A healthy lifestyle should start from now and also for your skin health.There are some...
+          </p>
+          <a href="#" class="text-sky-500 py-5 text-xs xl:text-base xl:font-semibold">
+              Read more  <i class="fa fa-long-arrow-right p-3" aria-hidden="true"></i>
+          </a>
+         </div>
+      </div>
+  </div>
+  <!--button-->
+  <div class="flex justify-center space-x-2 mt-16 md:mt-32 xl:mt-48">
+    <button 
+      type="button"
+      class="inline-block rounded-full hover:bg-blue-400 hover:text-white md:border sm:border border-blue-500  text-blue-400 sm:text-xs sm:px-4 sm:py-2 md:py-3 md:px-4 lg:px-12 lg:pt-3 lg:pb-2.5 lg:font-bold lg:text-sm">
+     View all
+    </button>
+  </div>
+</section>
+<!---form section--->
+<!--Contact US-->
+<section id="Contact us" class="mt-24 sm:top-24">
+  <h1 class="text-center md:text-2xl md:font-bold lg:text-2xl lg:font-bold xl:text-4xl xl:font-bold">
+      Contact us
+  </h1>
+  <hr class="w-10 border-t-2 border-black mx-auto my-3  lg:my-4 xl:w-14 xl:my-8">
+  <p class="text-sm text-gray-800 text-center md:text-base lg:text-base xl:text-lg mb-8">
+      Have any questions? We’d love to hear from you.
+  </p>
+
+<!--form section-->
+<div class="mx-auto sm:w-96 md:w-1/2 lg:w-6/12 xl:w-7/12">
+ <div class="flex lg:gap-2 sm:gap-7 md:gap-3 xl:gap-4 xl:mx-24">
+  <div id="name">
+      <label for="full name" class="text-gray-800 text-sm md:text-base xl:text-base mb-1">Your Name</label>
+      <input type="text" class="border border-gray-500 rounded py-1 sm:w-44 md:w-48 lg:w-64 xl:w-72 ">
+  </div>
+  <div id="phone">
+      <label for="phone no." class="text-gray-800 sm:text-sm md:text-base xl:text-base mb-1">Phone no.</label>
+      <input type="text" class="border border-gray-500 rounded py-1 sm:w-44 md:w-48 lg:w-64 xl:w-72">
+  </div>
+ </div>
+ <div id="mail" class="col-span-2 mt-4 xl:mx-24">
+  <label for="Email ID" class="text-gray-800 sm:text-sm xl:text-base mb-1">Email ID</label>
+<input type="email" class="border border-gray-500 py-1 rounded w-full"> 
+</div>
+<div id="message" class="mt-5 xl:mx-24">
+  <p class="text-gray-800 text-sm xl:text-base mb-1">Your message</p>
+  <textarea name="message" id="message box" class="border border-gray-800 rounded sm:w-96 sm:h-32 md:w-full lg:w-full lg:h-44 xl:w-full xl:h-52"></textarea>
+</div>
+  <!--button-->
+  <div class="flex justify-center space-x-2 mt-8">
+    <button 
+      type="button"
+      class="inline-block rounded-full hover:bg-blue-400 hover:text-white md:border sm:border border-blue-500  text-blue-400 sm:text-xs sm:px-4 sm:py-2 md:py-3 md:px-4 lg:px-7 lg:pt-3 lg:pb-2.5 lg:font-bold lg:text-sm">
+      Send Message
+    </button>
+  </div>
+</div>
+</section>
+<!--footer section-->
+<footer>
+  <div class="absolute  bg-blue-400 w-full mt-10 ">
+   <div class="flex sm:p-8 md:px-20 md:gap-10 lg:h-72 lg:gap-x-16 lg:mt-8 xl:mb-16 xl:gap-x-20 xl:px-44 xl:py-20">
+    <div id="footer-Trafalgar" class="sm:w-44 md:w-64 lg:w-80 lg:ml-16 xl:w-96">
+      <div id="logo-img" class="pb-4 xl:mb-2">
+       <img src="./images/logo bg.png" alt="logo-bg" class="w-7 lg:w-12 lg:mt-2">
+       <img src="./images/footer logo.png" alt="footer-logo" class="w-3 -mt-5 ml-2 lg:w-6 lg:-mt-9 lg:ml-3 ">
+       <img src="./images/Trafalgar.png" alt="Tarfalgar-logo" class="w-16 ml-9 -mt-3 lg:w-32 lg:ml-14 lg:-mt-6">
+      </div>
+      <p class="text-xs text-gray-100 font-thin lg:text-sm lg:mb-6 xl:text-lg ">
+       Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone
+      </p>
+      <a href="#" class="text-gray-100 sm:hidden md:block md:text-xs md:mt-4 lg:text-sm xl:text-base font-thin">©Trafalgar PTY LTD 2020. All rights reserved</a>
+   </div>
+   <div id="Company" class="text-gray-100 sm:w-18 sm:mx-4 md:mx-2 lg:mt-5 xl:w-32">
+       <h6 class="pb-3 text-white font-semibold sm:mt-1 xl:text-xl">Company</h6>
+       <ul class="sm:text-xs md:text-sm xl:text-lg font-thin xl:leading-loose  ">
+        <li><a href="#">About</a></li>
+           <li><a href="#">Testimonials</a></li>
+           <li><a href="#">Find a doctor</a></li>
+           <li><a href="#">Apps</a></li>
+       </ul>
+   </div>
+   <div class="text-gray-100 sm:w-18 sm:mx-4 sm:mt-1 md:mx-2 lg:mt-5  ">
+       <h6 class="pb-3 font-semibold text-white xl:text-xl">Region</h6>
+       <ul class="sm:text-xs md:text-sm xl:text-lg font-thin xl:leading-loose ">
+           <li><a href="#">Indonesia</a></li>
+           <li><a href="#">Singapore</a></li>
+           <li><a href="#">HongKong</a></li>
+           <li><a href="#">Canada</a></li>
+       </ul>
+   </div>
+   <div class="text-gray-100 sm:w-18 sm:mx-4 sm:mt-1 md:mx-2 lg:mt-5 xl:w-40">
+       <h6 class="pb-3 font-semibold text-white xl:text-xl">Help</h6>
+       <ul class="sm:text-xs md:text-sm xl:text-lg font-thin xl:leading-loose">
+           <li><a href="#">Help center</a></li>
+           <li><a href="#">Contact support</a></li>
+           <li><a href="#">Instructions</a></li>
+           <li><a href="#">How it works</a></li>
+       </ul>
+   </div>
+</div>
+<a href="#" class="sm:mb-10 sm:text-center sm:block md:mb-0 md:hidden sm:text-xs sm:font-thin sm:text-gray-100 sm:ml-8">©Trafalgar PTY LTD 2020. All rights reserved</a>
+<div id="footer-dot-element" class="">
+   </div>
+      <img src="./images/element.png" alt="dot-element" class="opacity-100 sm:w-16 sm:ml-2 sm:-mt-12 md:w-24 lg:w-28 lg:-mt-16 lg:ml-3 xl:w-32  xL:-mt-10">
+     <img src="./images/dot-element-2.png" alt="dot-element" class="absolute opacity-30 top-0 sm:w-16 sm:-mt-10 sm:right-10 md:w-24 md:-mt-14 md:right-16 lg:w-28 lg:right-20 xl:w-32  xl:-mt-16 xl:right-32">
+  </div>
+  </footer>
+<!-- Back to top button -->
+<a href="index.html">
+<button type="button"class="sticky sm:hidden md:block float-right inline-block rounded-full bg-blue-500 p-2 py-4 px-3 text-white md:mt-0 md:right-8 lg:right-10 xl:right-24">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+   <img src="./images/Scroll to Top.png" alt="scroll" class="w-10">
+  </button>
+</a>
+
+<script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>
